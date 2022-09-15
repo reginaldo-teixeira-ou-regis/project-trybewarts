@@ -15,8 +15,10 @@ function validation() {
 btnLogin.addEventListener('click', validation);
 
 function enableCheckbox() {
-  if (checkbox.value) {
+  if (checkbox.checked) {
     btnSend.disabled = false;
+  } else {
+    btnSend.disabled = true;
   }
 }
 
