@@ -1,3 +1,11 @@
+/* html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+} */
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -28,3 +36,13 @@ main {
 #email-select {
   display: flex;
 }
+
+/* #radio-conteiner {
+  border: 1px solid red;
+} */
+
+#radio-family {
+  display: flex;
+  flex-direction: column;
+}
+
