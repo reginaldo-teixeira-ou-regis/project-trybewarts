@@ -1,6 +1,8 @@
 const btnLogin = document.getElementById('btn-login');
 const emailLogin = document.getElementById('email-login');
 const passwordLogin = document.getElementById('password-login');
+const btnSend = document.getElementById('submit-btn');
+const checkbox = document.getElementById('agreement');
 
 function validation() {
   if (emailLogin.value === 'tryber@teste.com' && passwordLogin.value === '123456') {
@@ -11,3 +13,11 @@ function validation() {
 }
 
 btnLogin.addEventListener('click', validation);
+
+function enableCheckbox() {
+  if (checkbox.value) {
+    btnSend.disabled = false;
+  }
+}
+
+checkbox.addEventListener('click', enableCheckbox);
