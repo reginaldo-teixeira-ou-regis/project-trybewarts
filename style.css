@@ -27,9 +27,20 @@
   display: flex;
 }
 
+#btn-login {
+  background-color: rgb(78, 7, 110);
+  color: white;
+}
+
+#dadTitle {
+  width: 675px;
+}
+
 #title-form {
   display: flex;
-  padding: 4% 0% 0.5% 17%;
+  margin-top: 7%;
+  justify-content: center;
+  margin-left: 10%;
 }
 
 main {
@@ -47,22 +58,103 @@ main {
 }
 
 #full-name {
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+}
+
+#input-name , #input-lastname , #input-email {
+  display: flex;
+  width: 45%;
+  margin: 5px;
+}
+
+#house-container {
+  display: flex;
+  width: 46.25%;
+  margin: 5px;
 }
 
 #email-select {
   display: flex;
 }
 
+#house {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+#house1 {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+#radio-checkbox {
+  display: flex;
+}
+
 #radio-family {
   display: flex;
   flex-direction: column;
+  margin: 5px;
+}
+
+#radio-container {
+  margin: 5px;
+}
+
+#checkbox-container {
+  margin-left: 65px;
+  margin-top: 5px;
+}
+
+#checkbox-family {
+  display: flex;
+}
+
+#checkbox1 , #checkbox2 {
+  width: 50%;
+  margin: 5px;
+}
+
+#label-rate {
+  margin: 5px;
+}
+
+.radio-grade {
+  margin-left: 8px;
+}
+
+#container-text-area {
+  margin: 5px;
+}
+
+#textarea {
+  width: 95%;
+}
+
+#label-infos , #terms{
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+#submit-btn {
+  padding: 5px;
+  margin: 5px;
+  width: 95%;
+  background-color: rgb(78, 7, 110);
+  color: white;
+  margin-bottom: 20%;
+  justify-content: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  align-self:flex-start;
+  margin: 5px;
 }
+
+
 
 #footer {
   background-color: black;

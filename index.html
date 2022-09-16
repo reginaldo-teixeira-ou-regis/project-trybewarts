@@ -21,19 +21,20 @@
       </div>
     </form>
   </header>
-  <h1 id="title-form">Formulário de Avaliação</h1>
+    <div id="dadTitle">
+      <h1 id="title-form">Formulário de Avaliação</h1>
+    </div>
   <main>
-
     <form id="evaluation-form" action="">
       <div id="full-name">
-        <input id="input-name" type="text" name="nome" placeholder="Nome">
-        <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
+        <input id="input-name" type="text" name="nome" placeholder="Nome" required>
+        <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome" required>
       </div>
       <div id="email-select">
-        <input id="input-email" type="email" name="email" placeholder="Email">
+        <input id="input-email" type="email" name="email" placeholder="Email" required>
         <div id="house-container">
-          <label for="house">Casa:</label>
-          <select id="house" name="house">
+          <label for="house" id="house1">Casa:</label>
+          <select id="house" name="house" required>
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -41,72 +42,86 @@
           </select>
         </div>
       </div>
-      <div id="radio-conteiner">
-        <div>
-          <label id="label-family" for="family">Qual sua família?</label>
+      <div id="radio-checkbox">
+        <div id="radio-container">
+          <div>
+            <label id="label-family" for="family">Qual sua família?</label>
+          </div>
+          <div id="radio-family">
+            <div>
+              <input id="radioFe" type="radio" name="family" value="Frontend" required>
+              <label for="radioFe">Frontend</label>
+            </div>
+            <div>
+              <input id="radioBe" type="radio" name="family" value="Backend" required>
+              <label for="radioBe">Backend</label>
+            </div>
+            <div>
+              <input id="radioFs" type="radio" name="family" value="FullStack" required>
+              <label for="radioFs">FullStack</label>
+            </div>
+          </div>
         </div>
-        <div id="radio-family">
+        <div id="checkbox-container">
           <div>
-            <input id="radio" type="radio" name="family" value="Frontend">
-            <label for="radio">Frontend</label>
+            <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
           </div>
-          <div>
-            <input id="radio2" type="radio" name="family" value="Backend">
-            <label for="radio2">Backend</label>
-          </div>
-          <div>
-            <input id="radio3" type="radio" name="family" value="FullStack">
-            <label for="radio3">FullStack</label>
-          </div>
-        </div>
-      </div>
-      <div id="checkbox-conteiner">
-        <div>
-          <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-        </div>
-        <div id="checkbox-family">
-          <div>
-            <input class="subject" id="HoFs" type="checkbox" value="HoFs">
-            <label for="HoFs">HoFs</label>
-          </div>
-          <div>
-            <input class="subject" id="Jest" type="checkbox" value="Jest">
-            <label for="Jest">Jest</label>
-          </div>
-          <div>
-            <input class="subject" id="Promises" type="checkbox" value="Promises">
-            <label for="Promises">Promises</label>
-          </div>
-          <div>
-            <input class="subject" id="React" type="checkbox" value="React">
-            <label for="React">React</label>
-          </div>
-          <div>
-            <input class="subject" id="SQL" type="checkbox" value="SQL">
-            <label for="SQL">SQL</label>
-          </div>
-          <div>
-            <input class="subject" id="Python" type="checkbox" value="Python">
-            <label for="Python">Python</label>
+          <div id="checkbox-family">
+            <div id="checkbox1">
+              <div>
+                <input class="subject" id="HoFs" type="checkbox" value="HoFs">
+                <label for="HoFs">HoFs</label>
+              </div>
+              <div>
+                <input class="subject" id="Jest" type="checkbox" value="Jest">
+                <label for="Jest">Jest</label>
+              </div>
+              <div>
+                <input class="subject" id="Promises" type="checkbox" value="Promises">
+                <label for="Promises">Promises</label>
+              </div>
+            </div>
+            <div id="checkbox2">
+              <div>
+                <input class="subject" id="React" type="checkbox" value="React">
+                <label for="React">React</label>
+              </div>
+              <div>
+                <input class="subject" id="SQL" type="checkbox" value="SQL">
+                <label for="SQL">SQL</label>
+              </div>
+              <div>
+                <input class="subject" id="Python" type="checkbox" value="Python">
+                <label for="Python">Python</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-        <input type="radio" name="rate" value="1">1
-        <input type="radio" name="rate" value="2">2
-        <input type="radio" name="rate" value="3">3
-        <input type="radio" name="rate" value="4">4
-        <input type="radio" name="rate" value="5">5
-        <input type="radio" name="rate" value="6">6
-        <input type="radio" name="rate" value="7">7
-        <input type="radio" name="rate" value="8">8
-        <input type="radio" name="rate" value="9">9
-        <input type="radio" name="rate" value="10">10
+        <label id="label-rate" for="rate">Como você avalia a Trybewarts?</label>
+        <input class="radio-grade" id="radio1" type="radio" name="rate" value="1"><label for="radio1">1</label>
+        <input class="radio-grade" id="radio2" type="radio" name="rate" value="2"><label for="radio2">2</label>
+        <input class="radio-grade" id="radio3" type="radio" name="rate" value="3"><label for="radio3">3</label>
+        <input class="radio-grade" id="radio4" type="radio" name="rate" value="4"><label for="radio4">4</label>
+        <input class="radio-grade" id="radio5" type="radio" name="rate" value="5"><label for="radio5">5</label>
+        <input class="radio-grade" id="radio6" type="radio" name="rate" value="6"><label for="radio6">6</label>
+        <input class="radio-grade" id="radio7" type="radio" name="rate" value="7"><label for="radio7">7</label>
+        <input class="radio-grade" id="radio8" type="radio" name="rate" value="8"><label for="radio8">8</label>
+        <input class="radio-grade" id="radio9" type="radio" name="rate" value="9"><label for="radio9">9</label>
+        <input class="radio-grade" id="radio10" type="radio" name="rate" value="10"><label for="radio10">10</label>
       </div>
-      <label class="textarea" for="">Deixe seu comentário:</label>
-      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea><label id="counter" for="">500</label>
-      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?<input type="checkbox" name="" id="agreement"></label>
+      <div id="container-text-area">
+        <div>
+          <label class="textarea" for="">Deixe seu comentário:</label>
+        </div>
+        <div>
+          <textarea name="" id="textarea" cols="30" rows="8" maxlength="500"></textarea><label id="counter" for="">500</label>
+        </div>
+      </div>
+      <div>
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label><input type="checkbox" name="" id="agreement">
+      </div>
       <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="escudo-trybewarts">
