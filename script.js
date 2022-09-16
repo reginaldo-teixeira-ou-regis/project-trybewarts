@@ -3,6 +3,8 @@ const emailLogin = document.getElementById('email-login');
 const passwordLogin = document.getElementById('password-login');
 const btnSend = document.getElementById('submit-btn');
 const checkbox = document.getElementById('agreement');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 function validation() {
   if (emailLogin.value === 'tryber@teste.com' && passwordLogin.value === '123456') {
@@ -23,3 +25,21 @@ function enableCheckbox() {
 }
 
 checkbox.addEventListener('click', enableCheckbox);
+
+function counterCaracters () {
+
+  const inputLength = textArea.value.length;
+
+  counter.innerText = 500 - inputLength;
+}
+
+function cancelKeydown (event) {
+
+  if(counter === 0) {
+    event.preventDefault();
+  }
+
+}
+
+textArea.addEventListener('input', counterCaracters);
+counter.addEventListener('keydown', cancelKeydown);
