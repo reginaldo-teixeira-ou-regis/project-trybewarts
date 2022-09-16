@@ -26,19 +26,16 @@ function enableCheckbox() {
 
 checkbox.addEventListener('click', enableCheckbox);
 
-function counterCaracters () {
-
+function counterCaracters() {
   const inputLength = textArea.value.length;
 
   counter.innerText = 500 - inputLength;
 }
 
-function cancelKeydown (event) {
-
-  if(counter === 0) {
+function cancelKeydown(event) {
+  if (counter === 0) {
     event.preventDefault();
   }
-
 }
 
 textArea.addEventListener('input', counterCaracters);
