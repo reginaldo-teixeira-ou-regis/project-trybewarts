@@ -16,6 +16,8 @@ const materials = document.getElementsByClassName('subject');
 const avalie = document.getElementsByClassName('radio-grade');
 const obs = document.getElementById('textarea');
 const main = document.getElementsByTagName('main')[0];
+const formsOfForms = document.getElementById('form-data');
+const bgColorFData = document.getElementById('form-data').style.backgroundColor;
 
 function validation() {
   if (emailLogin.value === 'tryber@teste.com' && passwordLogin.value === '123456') {
@@ -79,7 +81,8 @@ const showForms = () => {
   Avaliação: ${mmmMMM(avalie)}
   Observações: ${obs.value}`;
   main.style.alignItems = 'flex-start';
-  document.getElementById('form-data').style.marginTop = '20px';
+  formsOfForms.style.marginTop = '20px';
+  formsOfForms.style.padding = '5px';
 };
 
 btnSend.addEventListener('click', (event) => {

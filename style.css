@@ -30,7 +30,7 @@
 
 #title-form {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   justify-content: center;
   margin-left: 10%;
@@ -137,19 +137,12 @@ main {
   width: 95%;
   background-color: rgb(78, 7, 110);
   color: white;
-  margin-bottom: 20%;
+  margin-bottom: 3%;
   justify-content: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  margin-bottom: 100px;
-}
-
-#form-data {
-  border-style: groove;
-  background-color: rgb(161, 161, 161);
-  padding: 5px;
 }
 
 #footer {
