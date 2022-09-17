@@ -15,26 +15,24 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="" method="get">
       <div id="menu-login">
-        <input id="email-login" type="email" name="email" placeholder="Email:">
+        <input class="alt" id="email-login" type="email" name="email" placeholder="Email:">
         <input id="password-login" type="password" name="password" placeholder="Senha:">
         <button id="btn-login" type="submit">Entrar</button>
       </div>
     </form>
   </header>
-    <div id="dadTitle">
-      <h1 id="title-form">Formulário de Avaliação</h1>
-    </div>
   <main>
     <form id="evaluation-form" action="">
+      <h1 id="title-form">Formulário de Avaliação</h1>
       <div id="full-name">
-        <input id="input-name" type="text" name="nome" placeholder="Nome" required>
-        <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome" required>
+        <input class="alt" id="input-name" type="text" name="nome" placeholder="Nome" required>
+        <input class="alt" id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome" required>
       </div>
       <div id="email-select">
-        <input id="input-email" type="email" name="email" placeholder="Email" required>
+        <input class="alt" id="input-email" type="email" name="email" placeholder="Email" required>
         <div id="house-container">
           <label for="house" id="house1">Casa:</label>
-          <select id="house" name="house" required>
+          <select class="alt" id="house" name="house" required>
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -49,15 +47,15 @@
           </div>
           <div id="radio-family">
             <div>
-              <input id="radioFe" type="radio" name="family" value="Frontend" required>
+              <input class="alt radio-f" id="radioFe" type="radio" name="family" value="Frontend" required>
               <label for="radioFe">Frontend</label>
             </div>
             <div>
-              <input id="radioBe" type="radio" name="family" value="Backend" required>
+              <input class="alt radio-f" id="radioBe" type="radio" name="family" value="Backend" required>
               <label for="radioBe">Backend</label>
             </div>
             <div>
-              <input id="radioFs" type="radio" name="family" value="FullStack" required>
+              <input class="alt radio-f" id="radioFs" type="radio" name="family" value="FullStack" required>
               <label for="radioFs">FullStack</label>
             </div>
           </div>
@@ -124,7 +122,12 @@
       </div>
       <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="escudo-trybewarts">
+      <form id="form-data" action="">
+        <p id="form-p"></p>
+      </form>
+      <div>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="escudo-trybewarts">
+      </div>
   </main>
   <script src="script.js"></script>
   <footer id="footer">Direitos reservados à Trybewarts©</footer>
@@ -132,8 +135,6 @@
 
 </html>
 
-<!-- <header> 1, 2, 3, 4 -->
-<!-- <form> 5, 6 -->
 <!-- npm run cypress:open -->
 
 <!-- git pull origin vinicius-pozzatto-trybewarts -->
