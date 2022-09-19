@@ -25,14 +25,14 @@
     <form id="evaluation-form" action="">
       <h1 id="title-form">Formulário de Avaliação</h1>
       <div id="full-name">
-        <input class="alt" id="input-name" type="text" name="nome" placeholder="Nome" required>
-        <input class="alt" id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome" required>
+        <input class="alt" id="input-name" type="text" name="nome" placeholder="Nome">
+        <input class="alt" id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
       </div>
       <div id="email-select">
-        <input class="alt" id="input-email" type="email" name="email" placeholder="Email" required>
+        <input class="alt" id="input-email" type="email" name="email" placeholder="Email">
         <div id="house-container">
           <label for="house" id="house1">Casa:</label>
-          <select class="alt" id="house" name="house" required>
+          <select class="alt" id="house" name="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -43,19 +43,19 @@
       <div id="radio-checkbox">
         <div id="radio-container">
           <div>
-            <label id="label-family" for="family">Qual sua família?</label>
+            <label id="label-family" for="family" aria-required="true">Qual sua família?</label>
           </div>
           <div id="radio-family">
             <div>
-              <input class="alt radio-f" id="radioFe" type="radio" name="family" value="Frontend" required>
+              <input class="alt radio-f" id="radioFe" type="radio" name="family" value="Frontend">
               <label for="radioFe">Frontend</label>
             </div>
             <div>
-              <input class="alt radio-f" id="radioBe" type="radio" name="family" value="Backend" required>
+              <input class="alt radio-f" id="radioBe" type="radio" name="family" value="Backend">
               <label for="radioBe">Backend</label>
             </div>
             <div>
-              <input class="alt radio-f" id="radioFs" type="radio" name="family" value="FullStack" required>
+              <input class="alt radio-f" id="radioFs" type="radio" name="family" value="FullStack">
               <label for="radioFs">FullStack</label>
             </div>
           </div>
@@ -110,12 +110,9 @@
         <input class="radio-grade" id="radio10" type="radio" name="rate" value="10"><label for="radio10">10</label>
       </div>
       <div id="container-text-area">
-        <div>
           <label class="textarea" for="">Deixe seu comentário:</label>
-        </div>
-        <div>
-          <textarea name="" id="textarea" cols="30" rows="8" maxlength="500"></textarea><label id="counter" for="">500</label>
-        </div>
+          <textarea name="" id="textarea" cols="30" rows="8" maxlength="500"></textarea>
+          <p id="counter">500</p>
       </div>
       <div>
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label><input type="checkbox" name="" id="agreement">

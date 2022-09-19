@@ -15,6 +15,10 @@
   height: 50px;
 }
 
+#trybewarts-header-title {
+  color: white;
+}
+
 .trybewarts-login {
   display: flex;
 }
@@ -120,6 +124,16 @@ main {
 
 #container-text-area {
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#counter {
+  position: absolute;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-right: 70px;
 }
 
 #textarea {

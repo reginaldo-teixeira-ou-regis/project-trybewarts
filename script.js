@@ -54,7 +54,7 @@ function cancelKeydown(event) {
 textArea.addEventListener('input', counterCaracters);
 counter.addEventListener('keydown', cancelKeydown);
 
-function mmmMMM(array) {
+function returns1Checked(array) {
   for (let i = 0; i < array.length; i += 1) {
     if (array[i].checked) {
       return array[i].value;
@@ -62,7 +62,7 @@ function mmmMMM(array) {
   }
 }
 
-function rrrRRRRR() {
+function returns0to6Checked() {
   const result = [];
   for (let i = 0; i < materials.length; i += 1) {
     if (materials[i].checked) {
@@ -73,16 +73,19 @@ function rrrRRRRR() {
 }
 
 const showForms = () => {
+  main.style.justifyContent = 'space-evenly';
   formsP.innerText = `Nome: ${firstName.value} ${lastname.value}
   Email: ${eMail.value}
   Casa: ${house.value}
-  Família: ${mmmMMM(radioFamily)}
-  Matérias:${rrrRRRRR()}
-  Avaliação: ${mmmMMM(avalie)}
+  Família: ${returns1Checked(radioFamily)}
+  Matérias:${returns0to6Checked()}
+  Avaliação: ${returns1Checked(avalie)}
   Observações: ${obs.value}`;
-  main.style.alignItems = 'flex-start';
-  formsOfForms.style.marginTop = '20px';
-  formsOfForms.style.padding = '5px';
+  formsP.style.width = '335px';
+  formsP.style.overflowWrap = 'break-word';
+  formsOfForms.style.padding = '20px';
+  formsOfForms.style.backgroundColor = 'rgb(235, 235, 235)';
+  formsOfForms.style.borderStyle = 'groove';
 };
 
 btnSend.addEventListener('click', (event) => {
