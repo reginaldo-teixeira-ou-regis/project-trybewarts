@@ -29,7 +29,7 @@
 }
 
 #dadTitle {
-  width: 675px;
+  max-width: 675px;
 }
 
 #title-form {
@@ -49,7 +49,7 @@ main {
 
 #evaluation-form {
   display: flex;
-  width: 675px;
+  max-width: 675px;
   flex-direction: column;
   padding: 10px 50px;
 }
